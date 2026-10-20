@@ -8,6 +8,12 @@ P1 Rev B is a **retrofit condition-monitoring prototype for commercial refrigera
 
 The design is intended to observe **temperature, door state, power/battery condition and local events**, providing a hardware foundation for future firmware capable of interpreting those signals together rather than treating the product as just another Wi-Fi thermometer.
 
+<p align="center">
+  <img src="docs/images/p1_revB_fusion_hero_iso.png" width="820" alt="P1 Rev B conceptual PCB and 1.69-inch display integration in Autodesk Fusion">
+</p>
+
+<p align="center"><em>Conceptual integration of the Rev B PCB and 1.69-inch IPS display in Autodesk Fusion. Final enclosure still in development.</em></p>
+
 > **Current milestone — hardware / PCB pre-fabrication:** the Rev B electronic architecture and PCB design are complete at design level. Final manufacturing review, fabrication, electrical bring-up, firmware, application/software, final enclosure CAD and field validation remain subsequent milestones.
 
 ## Why this project exists
@@ -111,6 +117,19 @@ Rev B uses an approximately **52 × 34 mm** PCB in the current design iteration,
 
 Moving to a four-layer stack was not cosmetic. A dedicated L2 ground plane provides a more continuous return reference, while L3 removes power-distribution congestion from the signal layers and supports a cleaner environment for USB, SPI, RF-adjacent routing and switching converters.
 
+<p align="center">
+  <img src="docs/images/p1_revB_layer2_gnd_plane.png" width="48%" alt="P1 Rev B L2 dedicated ground plane">
+  <img src="docs/images/p1_revB_layer3_power_distribution.png" width="48%" alt="P1 Rev B L3 power distribution layer">
+</p>
+
+<p align="center"><em>L2 dedicated ground plane for current return and signal integrity · L3 used primarily for VDD_LOGIC and secondary power distribution.</em></p>
+
+<p align="center">
+  <img src="docs/images/p1_revB_easyeda_top_render.png" width="760" alt="P1 Rev B top PCB render in EasyEDA Pro">
+</p>
+
+<p align="center"><em>Current Rev B PCB render in EasyEDA Pro — design-stage view, prior to fabrication.</em></p>
+
 ## Engineering process
 
 The design was developed block by block using the same workflow:
@@ -176,6 +195,13 @@ Peak system current is expected to be dominated by ESP32-C6 Wi-Fi transmission r
 ## Mechanical integration
 
 The electronics were developed with product packaging in mind rather than as a bare development board.
+
+<p align="center">
+  <img src="docs/images/p1_revB_fusion_top.png" width="48%" alt="Top-view mechanical integration study of the P1 Rev B PCB and display">
+  <img src="docs/images/p1_revB_fusion_opposite_iso.png" width="48%" alt="Opposite isometric mechanical integration study of the P1 Rev B PCB and display">
+</p>
+
+<p align="center"><em>Preliminary mechanical integration studies used to review PCB/display volume, connector access and component distribution.</em></p>
 
 Preliminary Autodesk Fusion work is being used to study:
 
