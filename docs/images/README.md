@@ -1,44 +1,38 @@
-# Image plan
+# Rev B image set
 
-Use a curated set of images rather than uploading every PCB screenshot.
+This folder contains the curated visual evidence used by the public P1 Rev B hardware milestone.
 
-## Recommended filenames and README order
+## Current files
 
 1. `p1_revB_fusion_hero_iso.png`
-   - Hero image directly below the opening project description.
-   - Best view: isometric Fusion integration with PCB + 1.69-inch display.
-   - Caption: `Conceptual integration of the Rev B PCB and 1.69-inch IPS display in Autodesk Fusion. Final enclosure still in development.`
+   - Main hero image.
+   - Autodesk Fusion conceptual integration of the Rev B PCB and 1.69-inch display.
+   - Used near the top of both project READMEs.
 
 2. `p1_revB_fusion_top.png`
-   - Mechanical-integration section.
-   - Caption: `Top-view mechanical integration study: compact PCB, display, and accessible connectors.`
+   - Top-view mechanical integration study.
+   - Used in the mechanical-integration section.
 
 3. `p1_revB_fusion_opposite_iso.png`
-   - Mechanical-integration section.
-   - Caption: `Opposite isometric view used to review volume, access points, and component distribution.`
+   - Opposite isometric mechanical integration study.
+   - Used together with the top view to communicate volume, access and component distribution.
 
 4. `p1_revB_layer2_gnd_plane.png`
-   - Four-layer PCB section.
-   - Caption: `L2 dedicated ground plane for current return and signal integrity.`
+   - Internal L2 ground-plane view.
+   - Used to document the dedicated return/reference layer.
 
 5. `p1_revB_layer3_power_distribution.png`
-   - Four-layer PCB section.
-   - Caption: `L3 used primarily for VDD_LOGIC / secondary power distribution.`
+   - Internal L3 power-distribution view.
+   - Used to document the four-layer architecture.
 
-## Optional EasyEDA view
+6. `p1_revB_easyeda_top_render.png`
+   - Neutral top PCB render from EasyEDA Pro.
+   - Used as design-stage PCB evidence without product branding.
 
-The current optional EasyEDA 3D screenshot is intentionally **not included in this public milestone** because it contains visible product-brand text that is being withheld for now. A neutral PCB-only render can be added later if needed.
+## Editorial rule
 
-## What not to prioritize
+The Fusion images are **conceptual/preliminary integration studies**, not photographs of a fabricated enclosure.
 
-- Do not upload all four routing-layer screenshots to the README.
-- L2 and L3 tell the four-layer architecture story better than noisy top/bottom screenshots.
-- Avoid near-duplicate Fusion views.
-- One EasyEDA 3D view is enough if Fusion already communicates the product integration clearly.
-- Do not use generic screenshot filenames such as `Captura de pantalla...`.
+The EasyEDA image is a **PCB CAD/render view**, not evidence of fabricated hardware.
 
-## Image truthfulness
-
-Every Fusion image must be described as an integration study until the enclosure is physically printed and assembled.
-
-Every EasyEDA 3D image is a CAD/render view, not evidence of fabricated hardware.
+L2 and L3 are intentionally favored over publishing every routing-layer screenshot because they communicate the four-layer engineering architecture more clearly and with less visual noise.
