@@ -8,6 +8,12 @@ P1 Rev B es un **prototipo de monitorización de condición para refrigeración 
 
 El diseño está pensado para observar **temperatura, estado de puerta, alimentación/batería y eventos locales**, creando una base de hardware para que el firmware futuro pueda interpretar estas señales en conjunto en lugar de reducir el producto a un simple termómetro Wi-Fi.
 
+<p align="center">
+  <img src="docs/images/p1_revB_fusion_hero_iso.png" width="820" alt="Integración conceptual de la PCB P1 Rev B y pantalla de 1.69 pulgadas en Autodesk Fusion">
+</p>
+
+<p align="center"><em>Integración conceptual de la PCB Rev B con pantalla IPS de 1.69 pulgadas en Autodesk Fusion. La carcasa final continúa en desarrollo.</em></p>
+
 > **Hito actual — hardware / PCB en pre-fabricación:** la arquitectura electrónica Rev B y el diseño PCB están completos a nivel de diseño. La revisión final de manufactura, fabricación, bring-up eléctrico, firmware, software/aplicación, carcasa CAD final y validación de campo corresponden a hitos posteriores.
 
 ## Por qué existe este proyecto
@@ -111,6 +117,19 @@ Rev B utiliza una PCB de aproximadamente **52 × 34 mm** en la iteración actual
 
 El salto a cuatro capas no es decorativo. L2 ofrece una referencia de retorno más continua, mientras L3 descarga la distribución de potencia de las capas de señales y favorece un entorno más limpio para USB, SPI, rutas cercanas a RF y convertidores conmutados.
 
+<p align="center">
+  <img src="docs/images/p1_revB_layer2_gnd_plane.png" width="48%" alt="Plano de tierra dedicado L2 de P1 Rev B">
+  <img src="docs/images/p1_revB_layer3_power_distribution.png" width="48%" alt="Capa L3 de distribución de potencia de P1 Rev B">
+</p>
+
+<p align="center"><em>L2 dedicado a GND para retorno de corriente e integridad de señal · L3 dedicado principalmente a VDD_LOGIC y distribución secundaria de potencia.</em></p>
+
+<p align="center">
+  <img src="docs/images/p1_revB_easyeda_top_render.png" width="760" alt="Render superior de la PCB P1 Rev B en EasyEDA Pro">
+</p>
+
+<p align="center"><em>Render actual de la PCB Rev B en EasyEDA Pro — vista de etapa de diseño, previa a fabricación.</em></p>
+
 ## Método de ingeniería
 
 El diseño se trabajó bloque por bloque siguiendo el mismo flujo:
@@ -176,6 +195,13 @@ El pico del sistema se espera dominado por Wi-Fi TX del ESP32-C6. La arquitectur
 ## Integración mecánica
 
 La electrónica se ha desarrollado pensando en integración de producto y no solamente como una placa de desarrollo aislada.
+
+<p align="center">
+  <img src="docs/images/p1_revB_fusion_top.png" width="48%" alt="Vista superior del estudio de integración mecánica P1 Rev B">
+  <img src="docs/images/p1_revB_fusion_opposite_iso.png" width="48%" alt="Vista isométrica opuesta del estudio de integración mecánica P1 Rev B">
+</p>
+
+<p align="center"><em>Estudios preliminares de integración mecánica utilizados para revisar volumen PCB/display, accesos de conectores y distribución de componentes.</em></p>
 
 La integración preliminar en Autodesk Fusion se utiliza para estudiar:
 
