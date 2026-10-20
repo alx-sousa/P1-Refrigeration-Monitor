@@ -25,9 +25,9 @@ Use a curated set of images rather than uploading every PCB screenshot.
    - Four-layer PCB section.
    - Caption: `L3 used primarily for VDD_LOGIC / secondary power distribution.`
 
-6. `p1_revB_easyeda_assembled_3d.png`
-   - Optional PCB-only evidence.
-   - Caption: `Current PCB 3D view in EasyEDA Pro.`
+## Optional EasyEDA view
+
+The current optional EasyEDA 3D screenshot is intentionally **not included in this public milestone** because it contains visible product-brand text that is being withheld for now. A neutral PCB-only render can be added later if needed.
 
 ## What not to prioritize
 
